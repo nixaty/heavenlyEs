@@ -2,25 +2,31 @@
   "schemaVersion": 1,
   "id": "heavenlyes",
   "version": "${version}",
-
   "name": "heavenlyEs",
   "description": "Just extensions for better play",
-  "authors": [],
-  "contact": {},
-
+  "authors": [
+    "nixaty"
+  ],
+  "contact": {
+    "repo": "https://github.com/nixaty/heavenlyEs"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/heavenlyes/icon.png",
-
   "environment": "client",
-  "entrypoints": {},
-
-      "mixins": [
-        "heavenlyes.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "org.heavenly.heavenlyes.client.HeavenlyEsClient"
+    ],
+    "main": [
+      "org.heavenly.heavenlyes.HeavenlyEs"
+    ]
+  },
+  "mixins": [
+    "heavenlyes.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }

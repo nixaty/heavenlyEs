@@ -6,6 +6,8 @@
   "mixins": [
   ],
   "client": [
+    "MixinTitleScreen",
+    "MixinGameMenu"
   ],
   "injectors": {
     "defaultRequire": 1
